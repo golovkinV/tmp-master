@@ -1,9 +1,10 @@
 from django.urls import include, re_path as url
-
-from template.views import echo, filters, extend
+from django.urls import path
+from template.views import *
 
 urlpatterns = [
-    url(r'^echo/$', echo),
-    url(r'^filters/$', filters),
-    url(r'^extend/$', extend),
+    path('echo/', echo)
+    # url(r'^echo/$', echo),
+    # url(r'^filters/$', filters),
+    # url(r'^extend/$', extend),
 ]
