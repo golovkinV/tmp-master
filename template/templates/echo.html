@@ -7,7 +7,7 @@
 {% endfor %}
 
 {% if meta.HTTP_X_PRINT_STATEMENT %}
-    statement is {{ meta.HTTP_X_PRINT_STATEMENT }}
+    statement {{ meta.HTTP_X_PRINT_STATEMENT }}
 {% else %}
     statement is empty
 {% endif %}

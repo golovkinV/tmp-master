@@ -3,8 +3,8 @@ from django.urls import path
 from template.views import *
 
 urlpatterns = [
-    path('echo/', echo)
-    # url(r'^echo/$', echo),
-    # url(r'^filters/$', filters),
-    # url(r'^extend/$', extend),
+    path('template/echo/', echo, name='echo'),
+    path('template/filters/', filters, name='filters'),
+    path('template/extent/', extend, name='extent'),
+    path('datasend/', DatasendView.as_view())
 ]
